@@ -10,8 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.7",
     "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.7",
+    "jsbarcode": "^3.11.6",
+    "list.js": "^2.3.1",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/list.js": "^2.3.4"
   }
 }

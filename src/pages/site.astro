@@ -1,0 +1,31 @@
+---
+
+---
+
+<div class="holder">
+  <svg id="barcode"></svg>
+</div>
+
+<script>
+  import JsBarcode from "jsbarcode";
+
+  // Create a URL object from the current window location
+  const url = new URL(window.location.href);
+
+  // Use URLSearchParams to access query parameters
+  const params = new URLSearchParams(url.search);
+
+  // Get the value of the "siteCode" parameter
+  const siteCode = params.get("siteCode");
+
+  JsBarcode("#barcode", siteCode!, {
+    width: 4,
+  });
+</script>
+
+<style>
+  .holder {
+    display: grid;
+    place-items: center;
+  }
+</style>
