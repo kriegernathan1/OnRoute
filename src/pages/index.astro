@@ -12,8 +12,8 @@ import JsBarcode from "jsbarcode";
   </head>
   <body>
     <div class="holder">
-      <div id="sites">
-        <input class="search" placeholder="Site Name" />
+      <div id="sites" class="sites">
+        <input class="search" placeholder="Site Name" autofocus />
         <ul class="list"></ul>
       </div>
     </div>
@@ -199,6 +199,11 @@ import JsBarcode from "jsbarcode";
   </script>
 
   <style is:global>
+    button {
+      width: 100%;
+      height: 40px;
+    }
+
     .holder {
       display: flex;
       flex-direction: column;
@@ -225,7 +230,7 @@ import JsBarcode from "jsbarcode";
     .list {
       font-family: sans-serif;
       margin: 0;
-      padding: 20px 0 0;
+      padding: 5px 0 0;
     }
     .list > li {
       display: block;
@@ -313,6 +318,12 @@ import JsBarcode from "jsbarcode";
     input {
       width: 80vw;
       height: 40px;
+    }
+
+    .sites {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
     }
   </style>
 </html>
